@@ -1,0 +1,81 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins' , sans-serif;
+}
+body{
+   background-color: #355070;
+}
+.container{
+   width: 90vw;
+   max-width: 600px;
+   padding: 2em 1.5em;
+   background-color: #6D6875;
+   margin: 1em auto;
+   border-radius: 0,5em;
+}
+h4 {
+   font-size: 1.5em;
+   color: #000;
+}
+.input-section{
+   margin: 0.5cm 0;
+}
+label, .error-message {
+   font-size: 1em;
+   color: #000; 
+}
+label{
+   margin-bottom: 0.5em;
+   font-weight: 500;
+}
+.error-message{
+   margin-top: 0.2em;
+}
+input, button{
+   display: block;
+   outline: none;
+   width: 100%;
+   padding: 0.5em;
+   border-radius: 0.3em;
+}
+input {
+   background-color: #F3EED9;
+   border: 1.5px solid #E9D5CA;
+   padding: 1em 0.5em;
+   border-radius: 0.3em;
+}
+button {
+   background-color: #B5EAD7; 
+   color: #355070;
+   padding: 0.8em 0;
+   margin-top: 2em;
+   font-size: 1em;
+   border: none;
+   border-radius: 0.3em;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #FFB5A7; 
+}
+
+.required-color{
+   color: #FF7171;
+
+}
+.error{
+   border-color: #FFB4A2;
+}
+.valid{
+   border-color: #C1C8E4;
+}
+.hide{
+   display: none;
+}
+@media only screen and(max-width:450px){
+   .container{
+      font-size: 14px;
+   }
+};

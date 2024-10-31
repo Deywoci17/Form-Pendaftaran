@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="Stylesheet" href="style.css">
+    <link rel="Stylesheet" href="https://fonts.google"> 
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off">
+            <h4>Registration Form</h4>
+
+            <div class="input-section">
+                <label>Nama Depan<span class="required-color">*</span></label>
+                <input type="text" placeholder="Masukan Nama Depan" id="first-name-input" required/>
+                <span id="first-name-error" class="hide required-color error-message">Inputan tidak valid</span>
+                <span id="empty-first-name" class="hide required-color error-message">Nama Depan tidak boleh kosong</span>
+            </div>
+
+            <div class="input-section">
+                <label>Nama Belakang<span class="required-color">*</span></label>
+                <input type="text" placeholder="Masukan Nama Belakang" id="last-name-input" required/>
+                <span id="last-name-error" class="hide required-color error-message">Inputan tidak valid</span>
+                <span id="empty-last-name" class="hide required-color error-message">Nama Belakang tidak boleh kosong</span>
+            </div>
+
+            <div class="input-section">
+                <label>Username<span class="required-color">*</span></label>
+                <input type="text" placeholder="Masukan Username" id="username" required/>
+                <span id="username-error" class="hide required-color error-message">Username tidak valid</span>
+                <span id="empty-username" class="hide required-color error-message">Username tidak boleh kosong</span>
+            </div>
+
+            <div class="input-section">
+                <label>Email<span class="required-color">*</span></label>
+                <input type="email" placeholder="Masukan Email" id="email" required/>
+                <span id="email-error" class="hide required-color error-message">Email tidak valid</span>
+                <span id="empty-email" class="hide required-color error-message">Email tidak boleh kosong</span>
+            </div>
+
+            <div class="input-section">
+                <label>Password<span class="required-color">*</span></label>
+                <input type="password" placeholder="Masukan Password" id="password" required/>
+                <span id="password-error" class="hide required-color error-message">Password harus 8 karakter</span>
+                <span id="empty-password" class="hide required-color error-message">Password tidak boleh kosong</span>
+            </div>
+
+            <div class="input-section">
+                <label>Konfirmasi Password<span class="required-color">*</span></label>
+                <input type="password" placeholder="Ulangi Password" id="verify-password" required/>
+                <span id="verify-password-error" class="hide required-color error-message">Harus sama dengan password sebelumnya</span>
+                <span id="empty-verify-password" class="hide required-color error-message">Password tidak boleh kosong</span>
+            </div>
+
+            <div class="input-section">
+                <label>Nomor Telepon<span class="required-color">*</span></label>
+                <input type="text" placeholder="Masukan Nomor Telepon" id="phone" required/>
+                <span id="phone-error" class="hide required-color error-message">Nomor Telepon harus 12 angka</span>
+                <span id="empty-phone" class="hide required-color error-message">Nomor Telepon tidak boleh kosong</span>
+            </div>
+
+            <div class="input-section">
+                <label>Jenis Kelamin</label>
+                <input type="radio" id="pria" name="jenis-kelamin" value="pria">
+                <label for="pria" style="width:auto;">Pria</label>
+                <input type="radio" id="wanita" name="jenis-kelamin" value="wanita">
+                <label for="wanita" style="width:auto;">Wanita</label>
+            </div>
+
+            <div class="input-section">
+                <label for="website">URL Website</label>
+                <input type="text" id="website" name="website" placeholder="URL Website">
+            </div>
+
+            <button id="submit-button">Daftar</button>
+        </form>
+    </div>
+    <script scr="script.js"></script>
+</body>
+
+</html>
